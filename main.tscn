@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://crw5jadk8i8gf"]
+
+[ext_resource type="Script" uid="uid://dceppqxs8h4y1" path="res://wheel.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://dsgah1w12gvgs" path="res://ChatGPT Image May 5, 2026, 11_15_29 PM.png" id="2_0xm2m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_0xm2m")
