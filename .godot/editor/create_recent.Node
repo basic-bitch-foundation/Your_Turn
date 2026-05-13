@@ -1,6 +1,8 @@
+ColorRect
+CanvasLayer
 CollisionShape2D
 Area2D
-Marker2D
 Sprite2D
+Marker2D
 Node2D
 Camera2D

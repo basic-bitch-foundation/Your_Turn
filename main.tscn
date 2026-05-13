@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://crw5jadk8i8gf"]
+[gd_scene load_steps=5 format=3 uid="uid://crw5jadk8i8gf"]
 
 [ext_resource type="Script" uid="uid://dbgbt8sne1a4d" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://dceppqxs8h4y1" path="res://wheel.gd" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://dsgah1w12gvgs" path="res://images/ChatGPT Image May 5, 2026, 11_15_29 PM.png" id="2_0xm2m"]
-[ext_resource type="PackedScene" uid="uid://dkkmhvpusa60x" path="res://knife.tscn" id="2_1bvp3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
 radius = 291.49503
@@ -28,9 +27,14 @@ shape = SubResource("CircleShape2D_1bvp3")
 position = Vector2(0, 444)
 zoom = Vector2(0.2, 0.2)
 
-[node name="knife" parent="." instance=ExtResource("2_1bvp3")]
-z_index = -1
-position = Vector2(0, 1705)
-
 [node name="spawn" type="Marker2D" parent="."]
 position = Vector2(0, 1701)
+
+[node name="flash" type="CanvasLayer" parent="."]
+
+[node name="rect" type="ColorRect" parent="flash"]
+visible = false
+offset_left = -204.0
+offset_top = -88.0
+offset_right = 1384.0
+offset_bottom = 707.0

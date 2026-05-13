@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://dkkmhvpusa60x"]
+[gd_scene load_steps=6 format=3 uid="uid://dkkmhvpusa60x"]
 
 [ext_resource type="Script" uid="uid://cteg4i46a43bk" path="res://knife.gd" id="1_mawn3"]
 [ext_resource type="Texture2D" uid="uid://bl73pgt7l4ijw" path="res://images/knife.png" id="2_8wt88"]
@@ -6,12 +6,29 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_8wt88"]
 radius = 5.8309517
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8wt88"]
+radius = 40.0
+height = 548.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s4gn3"]
+size = Vector2(135.5, 21)
+
 [node name="knife" type="Area2D"]
 script = ExtResource("1_mawn3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_8wt88")
+offset = Vector2(0, 260)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -281)
 shape = SubResource("CircleShape2D_8wt88")
+
+[node name="body" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="body"]
+shape = SubResource("CapsuleShape2D_8wt88")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="body"]
+position = Vector2(1.25, 24.5)
+shape = SubResource("RectangleShape2D_s4gn3")

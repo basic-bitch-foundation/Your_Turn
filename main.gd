@@ -1,27 +1,35 @@
 extends Node2D
 
-@onready var wheel = $wheel
-@onready var knife_spawn = $spawn
-@onready var knife = $knife
-
-var spawn_pending = false
+@onready var log = $wheel
+@onready var spawn_pt = $spawn
+@onready var flash = $flash/rect
 
 func _ready():
-	knife.wheel_node = wheel
-	knife.stuck.connect(_on_knife_stuck)
+	spawn()
 
-func _process(_delta):
+func setup_knife(k):
+	k.log_node = log
+	k.stuck.connect(func(): spawn())
+	k.hit_other.connect(on_clash)
+
+func on_clash():
+	do_flash()
+	Engine.time_scale = 0.0
+	await get_tree().create_timer(0.06, true, false, true).timeout
+	Engine.time_scale = 1.0
 	
-	if spawn_pending:
-		spawn_pending = false
-		_spawn_knife()
 
-func _on_knife_stuck():
-	spawn_pending = true
+func do_flash():
+	if not flash:
+		return
+	flash.visible = true
+	flash.modulate = Color(1, 1, 1, 1)
+	var t = create_tween()
+	t.tween_property(flash, "modulate", Color(1, 1, 1, 0), 0.35)
+	t.tween_callback(func(): flash.visible = false)
 
-func _spawn_knife():
-	var new_knife = preload("res://knife.tscn").instantiate()
-	add_child(new_knife)
-	new_knife.global_position = knife_spawn.global_position
-	new_knife.wheel_node = wheel
-	new_knife.stuck.connect(_on_knife_stuck)
+func spawn():
+	var k = preload("res://knife.tscn").instantiate()
+	add_child(k)
+	k.global_position = spawn_pt.global_position
+	setup_knife(k)
