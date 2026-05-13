@@ -4,14 +4,23 @@ var rot_spd = 1.2
 var dir = 1
 var origin: Vector2
 var shake = 0.0
+var active = false
 
 @onready var spr = $Sprite2D
 
 func _ready():
 	origin = position
 
+func start():
+	active = true
+
+func stop():
+	active = false
+
 func _process(delta):
-	rotation += rot_spd * dir * delta
+	if active:
+		rotation += rot_spd * dir * delta
+
 	if shake > 0.0:
 		position = origin + Vector2(randf_range(-shake, shake), randf_range(-shake, shake))
 		shake = lerp(shake, 0.0, 0.25)
