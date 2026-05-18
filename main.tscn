@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://dtbn53acbg0vd" path="res://knifes_ui.gd" id="4_1bvp3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
-radius = 291.49503
+radius = 275.79648
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_h2yge")
@@ -20,7 +20,7 @@ scale = Vector2(1.8564453, 1.7415365)
 texture = ExtResource("2_0xm2m")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheel"]
-position = Vector2(3, -89.99999)
+position = Vector2(1, -105)
 scale = Vector2(1.8564453, 1.7415365)
 shape = SubResource("CircleShape2D_1bvp3")
 
@@ -44,15 +44,22 @@ offset_bottom = 707.0
 script = ExtResource("4_1bvp3")
 
 [node name="k1" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-1005, 269)
 
 [node name="k2" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-815, 275)
 
 [node name="k3" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-571, 269)
 
 [node name="k4" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-583, 459)
 
 [node name="k5" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-589, 648)
 
 [node name="k6" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-589, 826)
 
 [node name="k7" type="Sprite2D" parent="knifes_ui"]
+position = Vector2(-592, 1025)

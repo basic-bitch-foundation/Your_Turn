@@ -1,12 +1,13 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778688810
+::res://::1779042709
 icon.svg::CompressedTexture2D::2280912816310598341::1776370196::1776370332::1::::<><><>0<>0<>49a96c8460f081bbb7f8e750bac627b6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-knife.gd::GDScript::6115103463900696868::1778142890::0::1::::<>Area2D<><>0<>0<><>::
-knife.tscn::PackedScene::7882536496565975109::1778070056::0::1::::<><><>0<>0<><>::uid://cteg4i46a43bk::::res://knife.gd<>uid://bl73pgt7l4ijw::::res://images/knife.png
-main.gd::GDScript::7241933569992716685::1778142861::0::1::::<>Node2D<><>0<>0<><>::
-main.tscn::PackedScene::6013305606883425061::1778143026::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://dsgah1w12gvgs::::res://images/ChatGPT Image May 5, 2026, 11_15_29 PM.png<>uid://dkkmhvpusa60x::::res://knife.tscn
+knife.gd::GDScript::6115103463900696868::1778867938::0::1::::<>Area2D<><>0<>0<><>::
+knife.tscn::PackedScene::7882536496565975109::1778696660::0::1::::<><><>0<>0<><>::uid://cteg4i46a43bk::::res://knife.gd<>uid://bl73pgt7l4ijw::::res://images/knife.png
+knifes_ui.gd::GDScript::8495758823425365809::1778867881::0::1::::<>Node2D<><>0<>0<><>::
+main.gd::GDScript::7241933569992716685::1778703286::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::6013305606883425061::1778701406::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://dsgah1w12gvgs::::res://images/ChatGPT Image May 5, 2026, 11_15_29 PM.png<>uid://dtbn53acbg0vd::::res://knifes_ui.gd
 README.md::TextFile::-1::1776370253::0::1::::<><><>0<>0<><>::
-wheel.gd::GDScript::7308835667938027526::1778140799::0::1::::<>Area2D<><>0<>0<><>::
+wheel.gd::GDScript::7308835667938027526::1778703316::0::1::::<>Area2D<><>0<>0<><>::
 ::res://addons/::1776370384
 ::res://addons/godot_super-wakatime/::1776370384
 api_key_prompt.tscn::PackedScene::3919262858641749045::1776370384::0::1::::<><><>0<>0<><>::

@@ -1,6 +1,5 @@
-res://main.tscn
 res://knife.gd
-res://main.gd
-res://wheel.gd
-res://knife.tscn
 res://knifes_ui.gd
+res://main.gd
+res://main.tscn
+res://wheel.gd
