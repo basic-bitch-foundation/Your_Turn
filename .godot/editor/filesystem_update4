@@ -1,5 +1,4 @@
-res://knife.gd
-res://knifes_ui.gd
-res://main.gd
 res://main.tscn
-res://wheel.gd
+res://apple.gd
+res://score.gd
+res://knifes_ui.gd

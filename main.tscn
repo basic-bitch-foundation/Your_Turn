@@ -1,28 +1,67 @@
-[gd_scene load_steps=6 format=3 uid="uid://crw5jadk8i8gf"]
+[gd_scene load_steps=13 format=3 uid="uid://crw5jadk8i8gf"]
 
 [ext_resource type="Script" uid="uid://dbgbt8sne1a4d" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://dceppqxs8h4y1" path="res://wheel.gd" id="1_ig7tw"]
-[ext_resource type="Texture2D" uid="uid://dsgah1w12gvgs" path="res://images/ChatGPT Image May 5, 2026, 11_15_29 PM.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bju2ddwfdun4m" path="res://images/treelog.png" id="3_5vw27"]
 [ext_resource type="Script" uid="uid://dtbn53acbg0vd" path="res://knifes_ui.gd" id="4_1bvp3"]
+[ext_resource type="Script" uid="uid://m3vqkdx4bhsv" path="res://apple.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://vt86dkb8cylc" path="res://images/apple.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://djrsjybjjacl2" path="res://images/apple_half.png" id="6_kek77"]
+[ext_resource type="Texture2D" uid="uid://b21e08piq6gea" path="res://images/half_a.png" id="7_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dgq2sy10ondus" path="res://images/knife_shill.png" id="8_4c57u"]
+[ext_resource type="Script" uid="uid://ccv284wcpv6l6" path="res://score.gd" id="8_5vw27"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
-radius = 275.79648
+radius = 318.88953
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kek77"]
+radius = 136.09187
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_h2yge")
 
 [node name="wheel" type="Area2D" parent="."]
 z_index = 25
+collision_mask = 4
 script = ExtResource("1_ig7tw")
 
 [node name="Sprite2D" type="Sprite2D" parent="wheel"]
+position = Vector2(1, -2)
 scale = Vector2(1.8564453, 1.7415365)
-texture = ExtResource("2_0xm2m")
+texture = ExtResource("3_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheel"]
-position = Vector2(1, -105)
+visible = false
+position = Vector2(9, -63.999992)
 scale = Vector2(1.8564453, 1.7415365)
 shape = SubResource("CircleShape2D_1bvp3")
+
+[node name="apple" type="Area2D" parent="wheel"]
+collision_layer = 4
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="wheel/apple"]
+position = Vector2(-20, -687.00006)
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="wheel/apple"]
+position = Vector2(-87.00001, -713)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+flip_h = true
+
+[node name="half_l" type="Sprite2D" parent="wheel/apple"]
+position = Vector2(44.999992, -724.99994)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple"]
+position = Vector2(-21, -672)
+shape = SubResource("CircleShape2D_kek77")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 444)
@@ -41,25 +80,80 @@ offset_right = 1384.0
 offset_bottom = 707.0
 
 [node name="knifes_ui" type="Node2D" parent="."]
+position = Vector2(752, 216)
+rotation = 1.5707964
 script = ExtResource("4_1bvp3")
 
 [node name="k1" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-1005, 269)
+position = Vector2(-1224, -200)
+texture = ExtResource("8_4c57u")
 
 [node name="k2" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-815, 275)
+position = Vector2(-1208, 144)
+texture = ExtResource("8_4c57u")
 
 [node name="k3" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-571, 269)
+position = Vector2(-1224, 480)
+texture = ExtResource("8_4c57u")
 
 [node name="k4" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-583, 459)
+position = Vector2(-1216, 818)
+texture = ExtResource("8_4c57u")
 
 [node name="k5" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-589, 648)
+position = Vector2(-1216, 1144)
+texture = ExtResource("8_4c57u")
 
 [node name="k6" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-589, 826)
+position = Vector2(-1216, 1464)
+texture = ExtResource("8_4c57u")
 
 [node name="k7" type="Sprite2D" parent="knifes_ui"]
-position = Vector2(-592, 1025)
+position = Vector2(-1224, 1792)
+texture = ExtResource("8_4c57u")
+
+[node name="apple" type="Area2D" parent="."]
+visible = false
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="apple"]
+position = Vector2(-23, -699)
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="apple"]
+position = Vector2(-55.000046, -695)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("7_5vw27")
+
+[node name="half_l" type="Sprite2D" parent="apple"]
+position = Vector2(30.999949, -695.00006)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("7_5vw27")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="apple"]
+position = Vector2(-21, -697)
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="score" type="Node2D" parent="."]
+script = ExtResource("8_5vw27")
+
+[node name="bg" type="Sprite2D" parent="score"]
+
+[node name="d1" type="Sprite2D" parent="score"]
+
+[node name="d10" type="Sprite2D" parent="score"]
+
+[node name="gameovr" type="Node2D" parent="."]
+
+[node name="bg" type="Sprite2D" parent="gameovr"]
+
+[node name="restart" type="TextureButton" parent="gameovr"]
+offset_right = 40.0
+offset_bottom = 40.0

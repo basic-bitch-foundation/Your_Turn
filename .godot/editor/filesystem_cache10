@@ -1,13 +1,15 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779042709
+::res://::1779300568
+apple.gd::GDScript::901372861272367629::1779299034::0::1::::<>Area2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2280912816310598341::1776370196::1776370332::1::::<><><>0<>0<>49a96c8460f081bbb7f8e750bac627b6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-knife.gd::GDScript::6115103463900696868::1778867938::0::1::::<>Area2D<><>0<>0<><>::
-knife.tscn::PackedScene::7882536496565975109::1778696660::0::1::::<><><>0<>0<><>::uid://cteg4i46a43bk::::res://knife.gd<>uid://bl73pgt7l4ijw::::res://images/knife.png
-knifes_ui.gd::GDScript::8495758823425365809::1778867881::0::1::::<>Node2D<><>0<>0<><>::
-main.gd::GDScript::7241933569992716685::1778703286::0::1::::<>Node2D<><>0<>0<><>::
-main.tscn::PackedScene::6013305606883425061::1778701406::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://dsgah1w12gvgs::::res://images/ChatGPT Image May 5, 2026, 11_15_29 PM.png<>uid://dtbn53acbg0vd::::res://knifes_ui.gd
+knife.gd::GDScript::6115103463900696868::1779290035::0::1::::<>Area2D<><>0<>0<><>::
+knife.tscn::PackedScene::7882536496565975109::1779133789::0::1::::<><><>0<>0<><>::uid://cteg4i46a43bk::::res://knife.gd<>uid://bl73pgt7l4ijw::::res://images/knife.png
+knifes_ui.gd::GDScript::8495758823425365809::1779120847::0::1::::<>Node2D<><>0<>0<><>::
+main.gd::GDScript::7241933569992716685::1779290036::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::6013305606883425061::1779300568::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://bju2ddwfdun4m::::res://images/treelog.png<>uid://dtbn53acbg0vd::::res://knifes_ui.gd<>uid://m3vqkdx4bhsv::::res://apple.gd<>uid://vt86dkb8cylc::::res://images/apple.png<>uid://djrsjybjjacl2::::res://images/apple_half.png<>uid://b21e08piq6gea::::res://images/half_a.png<>uid://ccv284wcpv6l6::::res://score.gd
 README.md::TextFile::-1::1776370253::0::1::::<><><>0<>0<><>::
-wheel.gd::GDScript::7308835667938027526::1778703316::0::1::::<>Area2D<><>0<>0<><>::
+score.gd::GDScript::4958270834775707113::1779300568::0::1::::<>Node2D<><>0<>0<><>::
+wheel.gd::GDScript::7308835667938027526::1779132784::0::1::::<>Area2D<><>0<>0<><>::
 ::res://addons/::1776370384
 ::res://addons/godot_super-wakatime/::1776370384
 api_key_prompt.tscn::PackedScene::3919262858641749045::1776370384::0::1::::<><><>0<>0<><>::
@@ -17,6 +19,12 @@ godot_super-wakatime.gd::GDScript::6277149880384411866::1776370384::0::1::::<>Ed
 plugin.cfg::TextFile::-1::1776370384::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1776370384::0::1::::<><><>0<>0<><>::
 utils.gd::GDScript::5251015809120159908::1776370384::0::1::::<>RefCounted<><>0<>0<><>::
-::res://images/::1778066634
+::res://images/::1779302369
+apple.png::CompressedTexture2D::1515248087205896728::1779297623::1779297623::1::::<><><>0<>0<>2581f8d4ceaa96d40ef57c24c9ad8cd9<>res://.godot/imported/apple.png-9d307a35cbd06ba9b8858e9385ea2456.ctex::
+apple_half.png::CompressedTexture2D::7827166306181707657::1779300520::1779300521::1::::<><><>0<>0<>604addf05000326cfb04ae4efa873f2a<>res://.godot/imported/apple_half.png-89596ea2259435d460eb316e98761bba.ctex::
 ChatGPT Image May 5, 2026, 11_15_29 PM.png::CompressedTexture2D::8435061404456042322::1778003132::1778066634::1::::<><><>0<>0<>70d3fb32646323c8e4ba8e9a0007206c<>res://.godot/imported/ChatGPT Image May 5, 2026, 11_15_29 PM.png-064e857526737b358bab6be1aa7ef4da.ctex::
+half_a.png::CompressedTexture2D::4335482553172929112::1779131367::1779131403::1::::<><><>0<>0<>30424d9199749467ae615d91747afb6f<>res://.godot/imported/half_a.png-48f1ebd20206cf06671e4f7ed2de5622.ctex::
 knife.png::CompressedTexture2D::3226285260508571968::1778066611::1778066632::1::::<><><>0<>0<>ad186a1a446ebf0ef9cc08ec0f47f878<>res://.godot/imported/knife.png-53f67814702ff72b3f0670bd85316fce.ctex::
+knife_shill.png::CompressedTexture2D::7615097961947864238::1779302366::1779302366::1::::<><><>0<>0<>21964c105bae60db58555772f92e3c30<>res://.godot/imported/knife_shill.png-a68d1d981cf468ede484906b2e016888.ctex::
+knife_shill_fade.png::CompressedTexture2D::1306327809318131106::1779302369::1779302369::1::::<><><>0<>0<>3ed905f1b95a33e7f6ddbd9d5039a748<>res://.godot/imported/knife_shill_fade.png-fc05b7ab8478fae2955df8b07cce7130.ctex::
+treelog.png::CompressedTexture2D::3061052739490733066::1779292402::1779292402::1::::<><><>0<>0<>3ada52578cd71b5fab8df3f001fa11fc<>res://.godot/imported/treelog.png-91b03e4e46898a3932cdffbcc6ae9ded.ctex::

@@ -15,8 +15,8 @@ extends Node2D
 @onready var k7 = $k7
 
 
-var img_ready = preload("res://icon.svg")   
-var img_used  = preload("res://images/knife.png")    
+var img_ready = preload("res://images/knife_shill.png")   
+var img_used  = preload("res://images/knife_shill_fade.png")    
 
 
 var slots = []
