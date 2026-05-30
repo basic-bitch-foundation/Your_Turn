@@ -1,4 +1,6 @@
 res://main.tscn
+res://main.gd
+res://progression.gd
+res://knife.gd
 res://apple.gd
-res://score.gd
 res://knifes_ui.gd

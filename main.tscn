@@ -1,21 +1,25 @@
-[gd_scene load_steps=13 format=3 uid="uid://crw5jadk8i8gf"]
+[gd_scene load_steps=17 format=3 uid="uid://crw5jadk8i8gf"]
 
 [ext_resource type="Script" uid="uid://dbgbt8sne1a4d" path="res://main.gd" id="1_h2yge"]
 [ext_resource type="Script" uid="uid://dceppqxs8h4y1" path="res://wheel.gd" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://bkyt1l4341sca" path="res://images/retry.png" id="2_vivmo"]
 [ext_resource type="Texture2D" uid="uid://bju2ddwfdun4m" path="res://images/treelog.png" id="3_5vw27"]
 [ext_resource type="Script" uid="uid://dtbn53acbg0vd" path="res://knifes_ui.gd" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://m3vqkdx4bhsv" path="res://apple.gd" id="5_lquwl"]
 [ext_resource type="Texture2D" uid="uid://vt86dkb8cylc" path="res://images/apple.png" id="6_272bh"]
 [ext_resource type="Texture2D" uid="uid://djrsjybjjacl2" path="res://images/apple_half.png" id="6_kek77"]
-[ext_resource type="Texture2D" uid="uid://b21e08piq6gea" path="res://images/half_a.png" id="7_5vw27"]
 [ext_resource type="Texture2D" uid="uid://dgq2sy10ondus" path="res://images/knife_shill.png" id="8_4c57u"]
-[ext_resource type="Script" uid="uid://ccv284wcpv6l6" path="res://score.gd" id="8_5vw27"]
+[ext_resource type="Script" uid="uid://fl8p6k1gve6f" path="res://progression.gd" id="11_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://dsve6qmy18ho0" path="res://images/background_y.png" id="11_efxa6"]
+[ext_resource type="Texture2D" uid="uid://cfplcckmdclph" path="res://images/okay_dot.png" id="11_w48qg"]
+[ext_resource type="Texture2D" uid="uid://cb7e2aknucbp1" path="res://images/intruc_png.png" id="12_dg77c"]
+[ext_resource type="Texture2D" uid="uid://cacbfgfynm4p0" path="res://images/okay_line.png" id="12_vivmo"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_1bvp3"]
 radius = 318.88953
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kek77"]
-radius = 136.09187
+radius = 262.64044
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_h2yge")
@@ -31,36 +35,142 @@ scale = Vector2(1.8564453, 1.7415365)
 texture = ExtResource("3_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheel"]
-visible = false
-position = Vector2(9, -63.999992)
+position = Vector2(0, -8)
 scale = Vector2(1.8564453, 1.7415365)
 shape = SubResource("CircleShape2D_1bvp3")
 
 [node name="apple" type="Area2D" parent="wheel"]
+position = Vector2(-36, -684)
 collision_layer = 4
 script = ExtResource("5_lquwl")
 
 [node name="full" type="Sprite2D" parent="wheel/apple"]
-position = Vector2(-20, -687.00006)
 scale = Vector2(0.3535154, 0.40234372)
 texture = ExtResource("6_272bh")
 
 [node name="half_r" type="Sprite2D" parent="wheel/apple"]
-position = Vector2(-87.00001, -713)
+position = Vector2(-56.000008, 7.999939)
 scale = Vector2(0.2337647, 0.3570557)
 skew = 0.07853982
 texture = ExtResource("6_kek77")
 flip_h = true
 
 [node name="half_l" type="Sprite2D" parent="wheel/apple"]
-position = Vector2(44.999992, -724.99994)
+position = Vector2(47.999996, 8.000061)
 rotation = -0.12915437
 scale = Vector2(0.2337647, 0.3570557)
 skew = 0.07853982
 texture = ExtResource("6_kek77")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple"]
-position = Vector2(-21, -672)
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="apple2" type="Area2D" parent="wheel"]
+position = Vector2(-2, 658)
+rotation = 3.1415927
+collision_layer = 4
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="wheel/apple2"]
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="wheel/apple2"]
+position = Vector2(-56.000008, 7.999939)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+flip_h = true
+
+[node name="half_l" type="Sprite2D" parent="wheel/apple2"]
+position = Vector2(47.999996, 8.000061)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple2"]
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="apple3" type="Area2D" parent="wheel"]
+position = Vector2(-682.0001, 173.00006)
+rotation = -1.9198622
+collision_layer = 4
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="wheel/apple3"]
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="wheel/apple3"]
+position = Vector2(-56.000008, 7.999939)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+flip_h = true
+
+[node name="half_l" type="Sprite2D" parent="wheel/apple3"]
+position = Vector2(47.999996, 8.000061)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple3"]
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="apple4" type="Area2D" parent="wheel"]
+position = Vector2(210, -636)
+rotation = 0.34906584
+collision_layer = 4
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="wheel/apple4"]
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="wheel/apple4"]
+position = Vector2(-56.000008, 7.999939)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+flip_h = true
+
+[node name="half_l" type="Sprite2D" parent="wheel/apple4"]
+position = Vector2(47.999996, 8.000061)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple4"]
+shape = SubResource("CircleShape2D_kek77")
+
+[node name="apple5" type="Area2D" parent="wheel"]
+position = Vector2(720, 0)
+rotation = 1.5707964
+collision_layer = 4
+script = ExtResource("5_lquwl")
+
+[node name="full" type="Sprite2D" parent="wheel/apple5"]
+scale = Vector2(0.3535154, 0.40234372)
+texture = ExtResource("6_272bh")
+
+[node name="half_r" type="Sprite2D" parent="wheel/apple5"]
+position = Vector2(-56.000008, 7.999939)
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+flip_h = true
+
+[node name="half_l" type="Sprite2D" parent="wheel/apple5"]
+position = Vector2(47.999996, 8.000061)
+rotation = -0.12915437
+scale = Vector2(0.2337647, 0.3570557)
+skew = 0.07853982
+texture = ExtResource("6_kek77")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wheel/apple5"]
 shape = SubResource("CircleShape2D_kek77")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -112,48 +222,77 @@ texture = ExtResource("8_4c57u")
 position = Vector2(-1224, 1792)
 texture = ExtResource("8_4c57u")
 
-[node name="apple" type="Area2D" parent="."]
-visible = false
-collision_layer = 2
-collision_mask = 0
-script = ExtResource("5_lquwl")
+[node name="progression" type="Node2D" parent="."]
+z_index = 4
+position = Vector2(-5000, 909)
+rotation = 3.1415927
+script = ExtResource("11_2cqfq")
 
-[node name="full" type="Sprite2D" parent="apple"]
-position = Vector2(-23, -699)
-scale = Vector2(0.3535154, 0.40234372)
-texture = ExtResource("6_272bh")
+[node name="dot" type="Sprite2D" parent="progression"]
+position = Vector2(-2496, -864)
+scale = Vector2(5, 5)
+texture = ExtResource("11_w48qg")
 
-[node name="half_r" type="Sprite2D" parent="apple"]
-position = Vector2(-55.000046, -695)
-scale = Vector2(0.2337647, 0.3570557)
-skew = 0.07853982
-texture = ExtResource("7_5vw27")
+[node name="line" type="Sprite2D" parent="progression"]
+position = Vector2(-2472, -200)
+rotation = -1.5707964
+scale = Vector2(7, 7)
+texture = ExtResource("12_vivmo")
+flip_v = true
 
-[node name="half_l" type="Sprite2D" parent="apple"]
-position = Vector2(30.999949, -695.00006)
-rotation = -0.12915437
-scale = Vector2(0.2337647, 0.3570557)
-skew = 0.07853982
-texture = ExtResource("7_5vw27")
-flip_h = true
+[node name="dot2" type="Sprite2D" parent="progression"]
+position = Vector2(-2520, 408)
+scale = Vector2(5, 5)
+texture = ExtResource("11_w48qg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="apple"]
-position = Vector2(-21, -697)
-shape = SubResource("CircleShape2D_kek77")
+[node name="line2" type="Sprite2D" parent="progression"]
+position = Vector2(-2456.0002, 1071.9999)
+rotation = -1.5707964
+scale = Vector2(7, 7)
+texture = ExtResource("12_vivmo")
+flip_v = true
 
-[node name="score" type="Node2D" parent="."]
-script = ExtResource("8_5vw27")
+[node name="dot3" type="Sprite2D" parent="progression"]
+position = Vector2(-2496, 1656)
+scale = Vector2(5, 5)
+texture = ExtResource("11_w48qg")
 
-[node name="bg" type="Sprite2D" parent="score"]
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -2
+offset_left = -4896.0
+offset_top = -2000.0
+offset_right = 4544.0
+offset_bottom = 2288.0
+texture = ExtResource("11_efxa6")
+metadata/_edit_lock_ = true
 
-[node name="d1" type="Sprite2D" parent="score"]
+[node name="instruction" type="Sprite2D" parent="."]
+z_index = 3
+position = Vector2(2160, 1568.0001)
+scale = Vector2(1.166748, 1.0976564)
+texture = ExtResource("12_dg77c")
 
-[node name="d10" type="Sprite2D" parent="score"]
+[node name="top_layer" type="CanvasLayer" parent="."]
+layer = 10
 
-[node name="gameovr" type="Node2D" parent="."]
+[node name="clash_popup" type="Sprite2D" parent="top_layer"]
+z_index = 11
+position = Vector2(512, 360.00003)
+scale = Vector2(0.1921875, 0.2078125)
+texture = ExtResource("2_vivmo")
 
-[node name="bg" type="Sprite2D" parent="gameovr"]
+[node name="Node2D" type="Node2D" parent="top_layer"]
+scale = Vector2(0.3, 0.3)
 
-[node name="restart" type="TextureButton" parent="gameovr"]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="win_popup" type="TextureRect" parent="top_layer/Node2D"]
+offset_left = 666.6667
+offset_top = 719.99994
+offset_right = 2714.6667
+offset_bottom = 1744.0
+texture = ExtResource("2_vivmo")
+
+[node name="Button" type="Button" parent="top_layer/Node2D"]
+offset_left = 1680.0
+offset_top = 1333.3333
+offset_right = 1832.0
+offset_bottom = 1437.3333

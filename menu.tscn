@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://b2x1e8s1bxesm"]
+
+[ext_resource type="Script" uid="uid://dhm3nanknnt6l" path="res://menu.gd" id="1_l48gv"]
+[ext_resource type="Texture2D" uid="uid://dsve6qmy18ho0" path="res://images/background_y.png" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://bnxgmcx3ii6nt" path="res://images/play_y.png" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://dwoxyteln0uky" path="res://images/turn_y.png" id="2_4hy44"]
+[ext_resource type="Texture2D" uid="uid://bsqce5vmp37r0" path="res://images/I_y.png" id="2_ytr4m"]
+[ext_resource type="Texture2D" uid="uid://uhooedqnxfiy" path="res://images/Your_y.png" id="3_ytr4m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_l48gv")
+
+[node name="play_btn" type="TextureButton" parent="."]
+z_index = 6
+offset_left = -408.0
+offset_top = -32.0
+offset_right = 1640.0
+offset_bottom = 992.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_ouk20")
+
+[node name="i_btn" type="TextureButton" parent="."]
+z_index = 3
+offset_left = 296.00003
+offset_top = 144.00002
+offset_right = 2344.0
+offset_bottom = 1168.0
+scale = Vector2(0.6, 0.6)
+texture_normal = ExtResource("2_ytr4m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(248, -176)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_4hy44")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(-304, -160)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_ytr4m")
+
+[node name="bg" type="TextureRect" parent="."]
+process_mode = 4
+offset_left = -944.0
+offset_top = -376.0
+offset_right = 1732.5713
+offset_bottom = 648.0
+scale = Vector2(0.7, 0.7)
+mouse_filter = 2
+texture = ExtResource("1_lti8b")
+metadata/_edit_lock_ = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1)
