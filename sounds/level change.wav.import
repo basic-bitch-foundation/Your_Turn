@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://i1peohfam388"
+path="res://.godot/imported/level change.wav-867fac5367803fb22a8e84e9cf18ee2c.sample"
+
+[deps]
+
+source_file="res://sounds/level change.wav"
+dest_files=["res://.godot/imported/level change.wav-867fac5367803fb22a8e84e9cf18ee2c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

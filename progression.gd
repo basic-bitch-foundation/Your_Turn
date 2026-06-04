@@ -32,15 +32,12 @@ func advance(_unused):
 	hits += 1
 	if hits < tgts[lvl - 1]:
 		return
-	
 	lvl  += 1
 	hits  = 0
 	if lvl > 5:
 		if main_ref:
 			main_ref.show_win()
 		return
-
-	
 	if main_ref:
 		main_ref.round_clear()
 

@@ -1,17 +1,18 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780140818
-apple.gd::GDScript::901372861272367629::1780140165::0::1::::<>Area2D<><>0<>0<><>::
+::res://::1780600783
+apple.gd::GDScript::901372861272367629::1780162219::0::1::::<>Area2D<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2280912816310598341::1776370196::1776370332::1::::<><><>0<>0<>49a96c8460f081bbb7f8e750bac627b6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-knife.gd::GDScript::6115103463900696868::1780132824::0::1::::<>Area2D<><>0<>0<><>::
+knife.gd::GDScript::6115103463900696868::1780162979::0::1::::<>Area2D<><>0<>0<><>::
 knife.tscn::PackedScene::7882536496565975109::1779133789::0::1::::<><><>0<>0<><>::uid://cteg4i46a43bk::::res://knife.gd<>uid://bl73pgt7l4ijw::::res://images/knife.png
-knifes_ui.gd::GDScript::8495758823425365809::1779306169::0::1::::<>Node2D<><>0<>0<><>::
-main.gd::GDScript::7241933569992716685::1780132824::0::1::::<>Node2D<><>0<>0<><>::
-main.tscn::PackedScene::6013305606883425061::1780139948::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://bkyt1l4341sca::::res://images/retry.png<>uid://bju2ddwfdun4m::::res://images/treelog.png<>uid://dtbn53acbg0vd::::res://knifes_ui.gd<>uid://m3vqkdx4bhsv::::res://apple.gd<>uid://vt86dkb8cylc::::res://images/apple.png<>uid://djrsjybjjacl2::::res://images/apple_half.png<>uid://dgq2sy10ondus::::res://images/knife_shill.png<>uid://fl8p6k1gve6f::::res://progression.gd<>uid://dsve6qmy18ho0::::res://images/background_y.png<>uid://cfplcckmdclph::::res://images/okay_dot.png<>uid://cb7e2aknucbp1::::res://images/intruc_png.png<>uid://cacbfgfynm4p0::::res://images/okay_line.png
+knifes_ui.gd::GDScript::8495758823425365809::1780153501::0::1::::<>Node2D<><>0<>0<><>::
+main.gd::GDScript::7241933569992716685::1780162220::0::1::::<>Node2D<><>0<>0<><>::
+main.tscn::PackedScene::6013305606883425061::1780163057::0::1::::<><><>0<>0<><>::uid://dbgbt8sne1a4d::::res://main.gd<>uid://dceppqxs8h4y1::::res://wheel.gd<>uid://bkyt1l4341sca::::res://images/retry.png<>uid://bju2ddwfdun4m::::res://images/treelog.png<>uid://dtbn53acbg0vd::::res://knifes_ui.gd<>uid://m3vqkdx4bhsv::::res://apple.gd<>uid://vt86dkb8cylc::::res://images/apple.png<>uid://djrsjybjjacl2::::res://images/apple_half.png<>uid://dgq2sy10ondus::::res://images/knife_shill.png<>uid://fl8p6k1gve6f::::res://progression.gd<>uid://dsve6qmy18ho0::::res://images/background_y.png<>uid://cfplcckmdclph::::res://images/okay_dot.png<>uid://cb7e2aknucbp1::::res://images/intruc_png.png<>uid://cacbfgfynm4p0::::res://images/okay_line.png
 menu.gd::GDScript::7677079801267189805::1780085219::0::1::::<>Node2D<><>0<>0<><>::
 menu.tscn::PackedScene::4330587697511498760::1780085151::0::1::::<><><>0<>0<><>::uid://dhm3nanknnt6l::::res://menu.gd<>uid://dsve6qmy18ho0::::res://images/background_y.png<>uid://bnxgmcx3ii6nt::::res://images/play_y.png<>uid://dwoxyteln0uky::::res://images/turn_y.png<>uid://bsqce5vmp37r0::::res://images/I_y.png<>uid://uhooedqnxfiy::::res://images/Your_y.png
-progression.gd::GDScript::375684466016754939::1780140165::0::1::::<>Node2D<><>0<>0<><>::
+progression.gd::GDScript::375684466016754939::1780154554::0::1::::<>Node2D<><>0<>0<><>::
 README.md::TextFile::-1::1776370253::0::1::::<><><>0<>0<><>::
 score.gd::GDScript::4958270834775707113::1779312657::0::1::::<>Node2D<><>0<>0<><>::
+snd.gd::GDScript::2898940600704269982::1780159897::0::1::::<>Node<><>0<>0<><>::
 wheel.gd::GDScript::7308835667938027526::1779306169::0::1::::<>Area2D<><>0<>0<><>::
 ::res://addons/::1776370384
 ::res://addons/godot_super-wakatime/::1776370384
@@ -42,6 +43,9 @@ retry.png::CompressedTexture2D::3139054863543117676::1779313775::1779313776::1::
 treelog.png::CompressedTexture2D::3061052739490733066::1779292402::1779292402::1::::<><><>0<>0<>3ada52578cd71b5fab8df3f001fa11fc<>res://.godot/imported/treelog.png-91b03e4e46898a3932cdffbcc6ae9ded.ctex::
 turn_y.png::CompressedTexture2D::8733758254201237172::1779308896::1779308897::1::::<><><>0<>0<>62dceb3cc3e7f139e95a4f30750d6d35<>res://.godot/imported/turn_y.png-e508e60ad059e70e3d3a774f485e73eb.ctex::
 Your_y.png::CompressedTexture2D::1419102771525528196::1779308903::1779308904::1::::<><><>0<>0<>c1e521188c665b50556115110c8e617c<>res://.godot/imported/Your_y.png-1bb7472d6318939b5491581e58a89c38.ctex::
-::res://sounds/::1780140829
-freesound_community-bush-cut-103503.mp3::AudioStreamMP3::5506603299993846263::1780140825::1780140826::1::::<><><>0<>0<>ebc0562b8a59d7495d4c224825d46e8d<>res://.godot/imported/freesound_community-bush-cut-103503.mp3-95e5587b87c17b188cf99c6421f80d7b.mp3str::
-jerryblessed-slicing-avocado-and-spooning-out-pit-540342 (2).mp3::AudioStreamMP3::6157696365898890868::1780140829::1780140830::1::::<><><>0<>0<>a3cc493fdd62a642d6cbaf095ec04c33<>res://.godot/imported/jerryblessed-slicing-avocado-and-spooning-out-pit-540342 (2).mp3-46f09142002966ec8b68e633c402f4ad.mp3str::
+::res://sounds/::1780159633
+fire.wav::AudioStreamWAV::8076148468102149597::1780159548::1780159557::1::::<><><>0<>0<>d5ee48e4239a551429885ffb6b0b264d<>res://.godot/imported/fire.wav-bffbfc47d9390c80437953e7f312d8b6.sample::
+knife_strike.wav::AudioStreamWAV::1957355889828740745::1780159380::1780159393::1::::<><><>0<>0<>740ae5fbdf9ba3a18e341bdf53e8a1fc<>res://.godot/imported/knife_strike.wav-fab9dbcd1a91f5d53f8d53cce0188843.sample::
+level change.wav::AudioStreamWAV::616103215145145011::1780159414::1780159425::1::::<><><>0<>0<>079bfca087e9d644e862a1053680ed35<>res://.godot/imported/level change.wav-867fac5367803fb22a8e84e9cf18ee2c.sample::
+lose.wav::AudioStreamWAV::1891654495697139748::1780159617::1780159627::1::::<><><>0<>0<>b63e7ad944cf99765ced5ea949d1b091<>res://.godot/imported/lose.wav-cb4e7670a5fe2d89b40e499c15bd8f1b.sample::
+slice.mp3::AudioStreamMP3::5506603299993846263::1780140825::1780159633::1::::<><><>0<>0<>65a866bc011e09523ded74e6e6ea72ce<>res://.godot/imported/slice.mp3-2a654b6a90010f1226d86c3f6f23d5d1.mp3str::

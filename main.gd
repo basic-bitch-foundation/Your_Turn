@@ -148,6 +148,7 @@ func lose():
 	_show_lose_pop()
 
 func _show_lose_pop():
+	Snd.lose()
 	clash_pop.scale    = Vector2(0.5, 0.5)
 	
 	clash_pop.modulate = Color(1, 1, 1, 0)
@@ -234,6 +235,7 @@ func round_clear():
 	
 	
 	prog.set_lvl(prog.lvl)
+	Snd.lvl()
 	state   = gst.play
 	spawn()
 	await get_tree().create_timer(0.6).timeout
